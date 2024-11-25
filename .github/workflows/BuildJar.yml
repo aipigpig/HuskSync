@@ -7,9 +7,9 @@ on:
         required: true  
         default: 'warning'
   push:  
-    branches: [ "master" ]  
+    branches: [ "aipigpig-patch-1" ]  
   pull_request:  
-    branches: [ "master" ] 
+    branches: [ "aipigpig-patch-1" ] 
 jobs: 
   build: 
     runs-on: ubuntu-latest 
@@ -17,7 +17,7 @@ jobs:
     steps:  
       - uses: actions/checkout@v3  
       - name: Set up JDK 21 
-        uses: actions/setup-java@v3  
+        uses: actions/setup-java@v4  
         with:  
           java-version: '21'  
           distribution: 'temurin'
